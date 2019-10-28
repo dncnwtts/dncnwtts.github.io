@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My notes</title>
+<!-- Copyright (c) 2009-2013 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="mathjax-MathJax-727332c/MathJax.js"></script>
+
+<h1>Foreground strength calculation</h1>
+
+In the CLASS sensitivity paper, we use the relation
+\[
+\alpha_\nu=\left(\frac{\nu_W}{\nu}\right)^\beta
+\frac{\partial B_\nu/\partial T}{\partial B_{\nu_W}/\partial T}
+\approx\left(\frac{\nu_W}{\nu}\right)^{\beta-2}
+\]
+This factor is clearly a conversion between the antenna temperature and the
+thermodynamic temperature. From what I can tell, the conversion between
+antenna temperature and thermodynamic temperature is given by
+\[
+g(\nu)=\frac{\partial T}{\partial T_A}=\frac{(e^x-1)^2}{x^2e^x}
+\]
+where $x=\nu/56.78\,\mathrm{GHz}$. I was able to derive this result from
+writing $T_A=\frac{h\nu}K(e^x-1)^{-1}$ and taking the derivative with respect
+to $T$, the thermodynamic temperature. In the sensitivity document, it seems
+like the conversion factor is $\partial B_\nu/\partial T_A$, since
+$B_\nu=2k\nu^2 T_A/c^2$, which gives the result
+$\alpha_\nu\approx(\nu_W/\nu)^{\beta-2}$.
+
+However, when I use the $g(\nu)$ treatment, which as far as I can tell doesn't
+use any approximations, we get something different. To summarize the
+derivation, (with tildes denoting antenna temperature, no tilde thermodynamic
+temperature) we have
+\begin{align*}
+\tilde P((\nu)&=\tilde P(\nu_i)\left(\frac\nu{\nu_i}\right)^{\beta}
+\\
+P(\nu)&=g(\nu)\tilde P(\nu)
+\\
+\frac{P(\nu)}{g(\nu)}&=\frac{P(\nu_i)}{g(\nu_i)}\left(\frac{\nu}{\nu_i}
+\right)^{\beta}
+\\
+\alpha_{\nu_i}(\nu)&=\frac{g(\nu)}{g(\nu_i)}\left(\frac{\nu}{\nu_i}\right)^\beta
+=\left(\frac\nu{\nu_i}\right)^{\beta-2}
+\left(\frac{e^x-1}{e^{x_i}-1}\right)^2e^{x_i-x}
+\end{align*}
+The only obvious time I see this $\alpha_\nu$ lining up with that in the
+document is when $\nu\simeq\nu_i$, i.e. when the science band is very close to
+the foreground band.
+
+As for the actual calculations, to match up the $\alpha$'s in table 11 with
+the ones using this formula, it looks like the results are only consistent
+when each $\beta$ is replaced with $\beta-2$. For the CLASS Q-band, the two
+methods (with $\beta=-3.0$) give
+\[
+\left(\frac{93}{38}\right)^{-3}=0.41,\qquad
+\alpha_{\nu_S}(\nu_W)=0.082
+\]
+while the PIPER 270 GHz band gives (with $\beta=1.8$)
+\[
+\left(\frac{93}{270}\right)^{1.8}=0.15,\qquad
+\alpha_{\nu_D}(\nu_W)=0.036
+\]
+</body>
+</html>
