@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facts worth recording</title>
+<!-- Copyright (c) 2009-2013 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<script type="text/javascript" src="mathjax-MathJax-727332c/MathJax.js"></script>
+
+<h2>Quantum</h2>
+
+Something pretty obvious to those who have done some 3D algebra is that the cross product of a vector with itself is zero. Note that $(\mathbf A\times\mathbf B)_z=A_xB_y-A_yB_x$, and this is obviously
+going to be zero if $A_xB_y=B_yA_x$. But this is actually the very heart of the commutation relation! So it turns out that
+\[
+\mathbf J\times\mathbf J=i\hbar\mathbf J
+\]
+just because of how the commutation relations work out, $[J_i,J_j]=i\hbar\varepsilon_{ijk}J_k$. I suppose this is obvious if you're familiar with using the Levi-Civita symbol to write cross products, with
+\[
+(\mathbf A\times\mathbf B)_k=\varepsilon_{ijk}A_iB_j
+\]
+In this form, it's pretty easy to show that if $i$ and $j$ aren't equal to each other and in the right order, we'd have $\varepsilon_{ijk}A_iB_j=[A_i,B_j]$. Anyway, if you know a little about vector algebra but not much about quantum
+mechanics, or even a little of both, the above equation can look a little strange. But I suppose we always assume that we're in an Abelian groub in everyday life, right?
+
+</html>
