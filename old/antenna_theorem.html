@@ -24,21 +24,21 @@ amount of cosmology but little of how measurements are made.
 </p>
 
 <p>
-The first concept is that of the <i>effective collecting area</i> $A_e$ of an antenna. The total
+The first concept is that of the <i>effective collecting area</i> \(A_e\) of an antenna. The total
 spectral energy, integrated over frequency, that a receiver collects will be the product of the
-geometric area $A$ and the flux density $S$. A real antenna that collects spectral energy $P_\nu$
+geometric area \(A\) and the flux density \(S\). A real antenna that collects spectral energy \(P_\nu\)
 has an effective area,
 \[
 A_e\equiv\frac{P_\nu}{S_\text{matched}}
 \]
-where $S_\text{matched}$  is the flux density of a matched polarization, i.e. only the energy from
+where \(S_\text{matched}\)  is the flux density of a matched polarization, i.e. only the energy from
 one direction of polarization. For an unpolarized source, this is just half of the flux density.
 Therefore,
 \[
 P_\nu=A_eS_\text{matched}=A_e\frac S2=\int_{4\pi}A_e(\theta,\phi)\frac{B_\nu}{2}d\Omega
 \]
-where $S_\nu=B_\nu$ since we're taking the antenna to be in thermal equilibrium. I belive that in
-this last equation, we had implicitly defined $A_e=\int_{4\pi}A_e(\theta,\phi)d\Omega$. It is known
+where \(S_\nu=B_\nu\) since we're taking the antenna to be in thermal equilibrium. I belive that in
+this last equation, we had implicitly defined \(A_e=\int_{4\pi}A_e(\theta,\phi)d\Omega\). It is known
 that a warm resister creates spectral power
 \[
 P_\nu=\frac{h\nu}{\exp(h\nu/kT)-1}=kT\frac{h\nu/kT}{\exp(h\nu/kT)-1}\simeq kT
@@ -62,8 +62,8 @@ has the same average collecting area, at that wavelength.
 
 <p>
 Also note that time reversal basically lets us run things in reverse, i.e. you can look at a
-receiver or an antenna and get the same equations; this lets us relate the gain $G(\theta,\phi)$
-(the proportion of energy being thrown out of the antenna) to $A_e$;
+receiver or an antenna and get the same equations; this lets us relate the gain \(G(\theta,\phi)\)
+(the proportion of energy being thrown out of the antenna) to \(A_e\);
 \[
 \langle A_e\rangle=\frac{\lambda^2}{4\pi},\qquad\langle G\rangle=1\Rightarrow
 A_e(\theta,\phi)=\frac{\lambda^2G(\theta,\phi)}{4\pi}

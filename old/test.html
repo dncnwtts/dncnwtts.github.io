@@ -10,7 +10,7 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-<h3>What is this $g(x)$?</h3>
+<h3>What is this \(g(x)\)?</h3>
 
 It looks like that weird equation comes from blackbody stuff, but I still don't know why it matters.
 \[
@@ -28,7 +28,7 @@ I_\mathrm{bright}=\frac{2\nu^2kT}{c^2}\Rightarrow\partial_T I_\mathrm{bright}=\f
 
 The main idea of how to actually extract the CMB signal from the different
 wavebands is just that we believe we know the form of the synchrotron
-radiation and dust emission. For the $Q$ component, for example, each of the
+radiation and dust emission. For the \(Q\) component, for example, each of the
 three bands has
 \begin{align*}
 Q(\nu)&=C+\alpha(\nu)S
@@ -43,12 +43,12 @@ C&=Q(\nu)-\alpha(\nu)S
 C&=\frac{Q(\nu)-(\alpha(\nu)/\alpha(\nu_1))Q(\nu_1)}
 {1-\alpha(\nu)/\alpha(\nu_1)}
 \end{align*}
-This exactly reproduces the result in the paper if $\alpha(\nu_1)=1$, which is
-not something I'm sure we can assume, although we could just use $\nu_1$ as
+This exactly reproduces the result in the paper if \(\alpha(\nu_1)=1\), which is
+not something I'm sure we can assume, although we could just use \(\nu_1\) as
 the baseline and it would work out.
 
 For multiple components, say synchrotron and dust, we would have (also note
-these are all in units of thermodynamic temperature, that's why $C$, the CMB
+these are all in units of thermodynamic temperature, that's why \(C\), the CMB
 is constant)
 \begin{align*}
 Q(\nu)&=C+\alpha_S(\nu)S+\alpha_D(\nu)D
@@ -75,16 +75,16 @@ In the notation of Katayama and Komatsu, this is
 {1-\sum_i\alpha_i(\nu)}
 \]
 
-<h3>$\alpha$ recovery</h3>
+<h3>\(\alpha\) recovery</h3>
 
 From <a href="https://wiki.pha.jhu.edu/advlab_wiki/index.php/Analysis_3">this analysis tutorial</a>, we can rewrite
-$[Q,U](\nu)-\sum_i\alpha_i(\nu)[Q,U](\nu_i)=\vec d-M\vec p$, where $\vec p$ are the $\alpha_i$, and $M=\begin{pmatrix}
-[Q,U](\nu_1)&[Q,U](\nu_2)\end{pmatrix}$. This makes
+\([Q,U](\nu)-\sum_i\alpha_i(\nu)[Q,U](\nu_i)=\vec d-M\vec p\), where \(\vec p\) are the \(\alpha_i\), and \(M=\begin{pmatrix}
+[Q,U](\nu_1)&[Q,U](\nu_2)\end{pmatrix}\). This makes
 \[
 \chi^2=(\vec d-M\vec p)^TN^{-1}(\vec d-M\vec p).
 \]
 To maximize this with respect to the parameters, we note that every term in the expansion is a scalar, for which the
-transpose of a number equals itself. We also assume that $N$ is symmetric.
+transpose of a number equals itself. We also assume that \(N\) is symmetric.
 \begin{align*}
 \chi^2&=\vec d^TN^{-1}\vec d-\vec d^TN^{-1}M\vec p-(M\vec p)^TN^{-1}\vec d+(M\vec p)^TN^{-1}(M\vec p)
 \\
@@ -101,7 +101,7 @@ M^TN^{-1}\vec d&=M^TN^{-1}M\vec p\Rightarrow
 \end{align*}
 
 For us, everything is transposed, but the procedure is basically the same,
-where $S$, $D$, $C$, and $N$ are synchrotron, dust, science data
+where \(S\), \(D\), \(C\), and \(N\) are synchrotron, dust, science data
 (CMB), and noise, respectively.
 \[
 T\equiv\begin{pmatrix} S&D\end{pmatrix},\qquad
