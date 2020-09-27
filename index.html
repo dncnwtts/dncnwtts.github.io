@@ -1,118 +1,233 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-<title>Duncan J. Watts</title>
-
-</head>
-
-
-
-<!-- Copyright (c) 2009-2013 The MathJax Consortium -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-  });
-</script>
-<script type="text/javascript" src="mathjax-MathJax-727332c/MathJax.js"></script>
-
-<body>
-
-<h2> <a href="mailto:duncanjosephwatts@gmail.com" style="text-decoration:underline">Duncan J. Watts</a>
-
-<a href="https://twitter.com/dncnwtts" class="twitter-follow-button"
-data-show-count="false" data-show-screen-name="false">Follow @dncnwtts</a>
-<script>!function(d,s,id){var
-js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,
-'script', 'twitter-wjs');</script>
-
-
-
-<!-- Place this tag after the last widget tag. -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript';
-    po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(po, s);
-  })();
-</script>
-
-</h2>
-
-<p> Johns Hopkins University Physics and Astronomy Research Assistant</p>
-<img src="figures/picture.jpg" alt="Code is written by coffee", height=400, width=400>
+<!DOCTYPE HTML>
 <!--
-height=207, width=158> -->
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<!-- 	This is the "Head" of the HTML document.
+		It contains information that isn't displayed on the actual page, but is useful
+		for the web browser when loading the page	
+	-->
+	<head>
+		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
+		<title>Duncan J. Watts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
+			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
+			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
+			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
+		-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
+			will load a separate set of CSS stylings from the file assets/css/noscript.css
+			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
+			available. 
+		-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<!-- The body is the location where your site's content will go -->
+	<body class="is-preload">
 
-<h3><a href="http://arxiv.org/a/watts_d_1.html"
-style="text-decoration:underline">Publications</a></h3>
+			<!-- This "div" wraps around all of our content and just changes how things are laid out -->
+			<div id="wrapper">
 
-<h3> Research Interests </h3>
+					<!-- This is where the content that appears on page load exists -->
+					<header id="header">
+						<!-- This is the main content of the front page -->
+						<div class="content">
+							<div class="inner">
+								<!-- Here is a heading where you can put your name -->
+								<h1>
+									Duncan J. Watts
+								</h1>
+								<!-- 	Here is an image where you can put a picture of you. 
+									You can change the width and height attributes below to change how large
+									your image is.
 
-<ul>
-<li>Cosmology (Cosmic Microwave Background, Inflation, B-mode polarization, Reionization)</li>
-<li>Dark Matter (Particles, potential astronomical gamma ray signals)</li>
-<li>Large scale structure (Halo clustering, halo occupation distribution)
-<li>Data visualization</li>
-</li>
-</ul>
+									Try adding "border-radius: 50%;" to the style attribute.
+								-->
+								<img src="figures/2015_353GHz_B-field.png"
+                                style="width:800px; height:400px; object-fit:cover;" 
+                                alt="Planck Satellite 353 GHz Polarized Map">
+								<!-- 	Here is a paragraph where you can put your position and institution, or
+									a short line about yourself.
+								-->
+								<p>
+									Postdoctoral Fellow <br> University of Oslo
+								</p>
+								<!-- Here is a paragraph where you can put a link to your CV -->
+								<p>
+									<a href="docs/resume.pdf" target="_blank">Curriculum Vitae</a>
+								</p>
+							</div>
+						</div>
+						<!-- This is the navigation menu -->
+						<nav>
+							<!-- This element makes an "Unordered List" -->
+							<ul>
+								<!-- This is a "List Item" -->
+								<li>
+									<!-- 	Note that this links to #about, which will move the page to wherever
+										the element with the id "about" exists.
+									-->
+									<a href="#about">About Me</a>
+								</li>
+								<li>
+									<a href="#research">Research</a>
+								</li>
+								<li>
+									<a href="#community">Community</a>
+								</li>
+								<li>
+									<a href="#contact">Contact</a>
+								</li>
+								<!-- 	You can add another button to your navigation menu by adding
+									another List Item with a link inside of it.
+								-->
+								<!-- <li>
+									<a href="images/Astronomy.jpg">My CV</a>
+								</li> -->
+							</ul>
+						</nav>
+					</header>
 
-<p>
-Currently working on 
-<a href="http://sites.krieger.jhu.edu/class/">
-CLASS (Cosmology Large Angular Scale Surveyor)</a>.
-</p>
+					<!-- These are the "cards" that appear when you click the buttons on the main page -->
+					<div id="main">
+						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous 
+							button links to.
+						-->
+						<article id="about">
+							<h2 class="major">About Me</h2>
+							<!-- Here is an image that you can customize for this page -->
+							<span class="image main">
+								<img src="figures/picture.jpg" alt=""/>
+							</span>
+							<!-- Here are three paragraphs where you can fill out information about yourself -->
+							<p>
+								<b>Education:</b>
+                                <p>Johns Hopkins University, PhD, 2018</p>
+                                <p>Harvard University, AB, 2012</p>
+							</p>
+							<p>
+								<b>Research Interests:</b>
+                                <p>Cosmology</p>
+                                <p>Cosmic Microwave Background</p>
+                                <p>Inflation</p>
+                                <p>Reionization</p>
+							</p>
+                            <p>
+                                <b>Miscellanea:</b>
+                            </p>
+						</article>
 
-<p>
-Previously worked with 
-<a href="http://pha.jhu.edu/~menard">
-Brice M&eacutenard</a>, 
-<a href="http://nebel.rc.fas.harvard.edu/dfink/">
-Douglas Finkbeiner</a>,
-<a href="http://scholar.harvard.edu/deisenstein/">
-Daniel Eisenstein</a>,
-<a href="https://www.cfa.harvard.edu/~smeibom/">
-S&oslashren Meibom</a>, and
-<a href="http://astro.uchicago.edu/~fabrycky/Home.html">
-Daniel Fabrycky</a>.
-</p>
-  
-<p>
-  <a href="docs/resume.pdf">Curriculum Vitae</a>
-</p>
+						<!-- Here is the "Research" card. -->
+						<article id="research">
+							<h2 class="major">Research</h2>
+							<span class="image main">
+								<img src="images/pic02.jpg" alt=""/>
+							</span>
+							<p>
+								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
+									the next line.
+								-->
+								<b>Project I Title</b><br>Project description, including further links to posters, talks, publications.
+							</p>
+							<p>
+								<b>Project II Title</b><br>Project description, including further links to posters, talks, publications.
+							</p>
+							<p>
+								<b>Publications:</b> <a
+                                    href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5437-6121&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS Publications</a>
+							</p>
+						</article>
 
-<h3>General Interests</h3>
-<ul>
-<li>Public education</li>
-<li>Science literacy</li>
-<li>Data mining</li>
-<li>Music (performing and enjoying)</li>
-<li>Health (public and personal)</li>
-</ul>
+						<!-- Here is the "Community" card. -->
+						<article id="community">
+							<h2 class="major">Community</h2>
+							<span class="image main">
+								<img src="images/pic03.jpg" alt=""/>
+							</span>
+							<p>
+								<b>Teaching:</b>
+							</p>
+							<p>
+								<b>Outreach:</b>
+							</p>
+							<p>
+								<b>Equity & Inclusion:</b>
+							</p>
+						</article>
 
-<p>I am 99% sure that I am not related to 
-<a href="http://everythingisobvious.com/the-author" 
-style="text-decoration:underline">this man</a>.</p>
+						<!-- Here is a the "Contact" card. -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							<p> 
+								<b>Email: duncanwa@uio.no</b> 
+							</p>
+							<p> 
+								<b>Address: P.O box 1029, Blindern, 0315 OSLO, Norway</b> 
+							</p>
 
-<h2>My old pages</h2>
+							<!-- 	Here are the fancy icons that link to your social media.
+								These icons are rendered using Font Awesome fonts, and you can find more icons
+								here: https://fontawesome.com/icons
+							-->
+							<ul class="icons">
+								<!-- The Twitter icon -->
+								<li>
+									<!-- 	Note that you need to change the link to point to your page.
+										Replace "#" with your Twitter profile page.
+									-->
+									<a href="https://twitter.com/dncnwtts" class="icon fa-twitter">
+										<span class="label">Twitter</span>
+									</a>
+								</li>
+								<!-- The GitHub icon -->
+								<li>
+									<a href="https://github.com/dncnwtts" class="icon fa-github">
+										<span class="label">GitHub</span>
+									</a>
+								</li>
+								<!-- 	We can add a new icon by searching on the Font Awesome website
+									for the correct class name and inserting it as a new list item.
 
-<ul>
-<li><a href="old/alpha.html">Alpha</a></li>
-<li><a href="old/antenna_theorem.html">Antenna theorem derivation</a></li>
-<li><a href="old/cool_facts.html">Cool facts</a></li>
-<li><a href="old/test.html">Test?</a></li>
-<li><a href="old/inversion.html">$\chi^2$ without matrix inversion</a></li>
-<li><a href="old/params.html">How CMB determines parameters</a></li>
-<li><a href="old/quote.html">Why we think inflation is a good idea</li>
-</ul>
+									We found "envelope" here: https://fontawesome.com/icons/envelope
+								-->
+								<li>
+									<a href="mailto:duncanwa@uio.no" class="icon fa-envelope">
+										<span class="label">Email</span>
+									</a>
+								</li>
+							</ul>
+						</article>
+					</div>
 
-</body>
+					<!-- This is the footer that appears at the bottom of the page -->
+					<footer id="footer">
+						<!-- 	You can change "Untitled" to your name to show everyone that
+							this is your work.
+						-->
+						<p class="copyright">&copy; Duncan J. Watts. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+			<!--	This is the background image of the site.
+				All configuration of the background is done with CSS.
+				Look in the file assets/css/main.css and search for "#bg" to
+				see how this element is styled. Look for comments pointing 
+				to where you can set a new background image.
+			-->
+			<div id="bg"></div>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
