@@ -1,0 +1,302 @@
+\documentclass[a4paper]{resume}
+% \documentclass{letter}
+
+\usepackage{tgpagella}
+
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{bibentry}
+\usepackage{aas_macros}
+\usepackage[hidelinks]{hyperref}
+\renewcommand{\categoryfont}{\sc}
+
+\newcommand{\myname}[1]{\textbf{#1}}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter
+% 		will be reset to account for marginparsep]
+%
+\setlength{\oddsidemargin}{.3in}
+\setlength{\marginparwidth}{.5in}
+\setlength{\marginparsep}{0in}
+%
+% calculate other dimensions [textwidth and evensidemargin]
+% in function of oddsidemargin and marginparwidth:
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+%
+%
+\setlength{\topmargin}{-0.5in}
+%
+%
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+%\usepackage[utf8]{inputenc}
+%\usepackage[varg]{txfonts}
+
+%   \usepackage[default,scale=0.95]{opensans} %% Alternatively
+%   %\usepackage[defaultsans,scale=0.95]{opensans} %% Alternatively
+%   %% use the option 'defaultsans' instead of 'default' to replace the
+%   %% sans serif font only.
+%   \usepackage[T1]{fontenc}
+
+\usepackage[sfdefault]{noto}
+\usepackage[T1]{fontenc}
+
+
+
+
+\author{Duncan Joseph Watts}
+% ------ Address --------------------------------------------------------
+
+\address{
+Postdoctoral Fellow\\
+Institute of Theoretical Astrophysics\\
+University of Oslo\\
+Email: \href{mailto:duncanwa@uio.no}{\tt duncanwa@uio.no}\\
+\texttt{orcid}:
+\href{https://orcid.org/0000-0002-5437-6121}{0000-0002-5437-6121}\\
+Website: \url{http://dncnwtts.github.io}
+}{
+P.O Box 1029\\
+Blindern\\
+0315 Oslo\\
+Norway
+}
+
+\begin{document}
+\maketitle
+
+% --------- Research ----------------------------------------------------
+
+%\begin{category}{\mbox{Research Interests:}}
+%\citemnobullet\\
+%Cosmology\\
+%Cosmic Microwave Background Physics\\
+%Inflation\\
+%Galactic Foregrounds\\
+%Nonlinear optimization\\
+%Monte Carlo Markov Chain methods\\
+%Distributed computing (\texttt{slurm}, \texttt{PBS})\\
+%Multivariate statistics
+%\end{category}
+
+% -------- Work experience --------------------------------------------
+
+\begin{category}{Employment:}
+\citemnobullet\\
+2024--Present:\\
+Researcher\\
+Principal Investigator: \textsc{CosmoglobeHD} Project
+\citemnobullet
+2020--2024:\\
+Postdoctoral Fellow\\
+University of Oslo\\
+\qquad \textsl{Supervisors:} Ingunn K.~Wehus and Hans Kristian Kamfjord
+    Eriksen
+%\qquad \textsl{Projects:} Coordinating data anslysis for the
+%    \textsc{Cosmoglobe} project
+\citemnobullet
+2018--2020:\\
+Assistant Research Scientist\\
+Johns Hopkins University\\
+\qquad \textsl{Supervisors:} Tobias A.~Marriage and Charles
+L.~Bennett\\
+\qquad \textsl{Projects:} Data analysis for the CLASS experiment and\\
+\qquad \phantom{\textsl{Projects:}} quantifying cosmological discordances
+\end{category}
+
+% ------- Education ---------------------------------------------------
+
+\begin{category}{Education:}
+\citemnobullet\\
+Johns Hopkins University \\
+2012--2018, Ph.D. Physics and Astronomy\\
+\qquad \textsl{Advisor:} Tobias A.~Marriage\\
+\qquad \textsl{Thesis:} Methods and Projections for Joint Foreground
+and\\
+\qquad \phantom{\textsl{Thesis:}} Cosmological Parameter Estimation
+for the CLASS Experiment\\
+2012--2014, M.A. Physics and Astronomy \\
+
+\citemnobullet
+Harvard University\\
+2008--2012, A.B. Departmental Honors, Physics and Astronomy\\
+\qquad \textsl{Advisor:} Douglas P.~Finkbeiner\\
+\qquad \textsl{Thesis:} An Investigation of Gamma-Rays in the Galactic
+Center
+\end{category}
+
+%\begin{category}{\mbox{Computing skills:}}
+%\citemnobullet\\
+%\LaTeX\\
+%\texttt{python}\\
+%\texttt{unix} (\texttt{Linux Mint}, \texttt{Ubuntu})\\
+%Version control (\texttt{git}, \texttt{cvs})\\
+%Statistical analysis\\
+%Distributed computing (\texttt{slurm}, \texttt{PBS})
+%\end{category}
+
+
+% --------- Teaching and Outreach ----------------------------------------------------
+
+\begin{category}{\mbox{Teaching and Outreach}}
+  \citemnobullet\\
+2012--2018, Volunteer, JHU Physics and Astronomy Graduate Student Public Outreach Group\\
+2013--2016, Maryland Space Grant Observatory Fellowship\\
+Fall 2016, Teaching Assistant/Lecturer, Graduate Cosmology\\
+Fall 2012, Teaching Assistant, Introductory Physics Recitation and Laboratory
+\end{category}
+
+% --------- Collaborations ----------------------------------------------------
+
+\begin{category}{\mbox{Collaborations:}}
+\citemnobullet\\
+2013--, The Cosmology Large Angular Scale Surveyor (CLASS) Collaboration
+\citemnobullet
+2020--, \textsc{Cosmoglobe}
+\end{category}
+
+%   % -------- Professional Services
+%   
+%   \begin{category}{\mbox{Professional Services}}
+%   \citemnobullet\\
+%   2016--, Invited Referee, Astrophysical Journal \\
+%   2017--, Invited Referee, Astronomy and Astrophysics
+%   \end{category}
+%   
+%   % -------- Proposals --------------------------------------------
+%   
+%   \begin{category}{\mbox{Successful Proposals:}}
+%   \citemnobullet\\
+%   National Radio Astronomy Observatory, Green Bank Telescope: \\
+%   2014B: Crichton, D. et al., MUSTANG-1.5 Observations of an SZE complete sample of ACT Galaxy
+%   Clusters. \emph{Awarded 50 hours, grade B.}
+%   \end{category}
+
+% -------- Technical --------------------------------------------
+
+% \begin{category}{\mbox{Technical:}}
+
+% \end{category}
+
+% -------- Conferences --------------------------------------------
+
+\begin{category}{\mbox{Conference Presentations and Talks}}
+\citemnobullet
+\noindent
+\begin{enumerate}[topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt]
+\item Institute for Theoretical Physics, Heidelberg Cosmology and Particle Physics Seminar
+	\textit{Cosmoglobe DR1: Improved WMAP maps through joint analysis, October 2023}
+\item Windows on the Universe: Rencontres du Vietnam
+	\textit{Cosmoglobe DR1: Better Data Through Joint Analysis}, August 2023
+\item Mission: Spectro-polarimetry of the Microwave Sky
+	\textit{Improving FIRAS data processing through joint analysis}, November 2022
+\item Johns Hopkins University, CAS Seminar \texttt{BeyondPlanck to Cosmoglobe -- An end-to-end
+	reanalysis of WMAP data}, November 2021
+\item CMB-S4 Workshop, \emph{Projected Constraints on Optical Depth to Reionization and Neutrino Mass from the CLASS Experiment}, August 2017
+\item Great Lakes Cosmology Workshop, \emph{Measuring CMB B-mode Polarization
+    with Galactic Foregrounds on a Cut Sky}, June 2016
+\item AAS Winter Meeting 
+    \emph{Galactic foreground cleaning in support of a primordial CMB B-mode measurement}, January 2014
+\end{enumerate}
+\end{category}
+
+%% -------- Workshops --------------------------------------------
+%\begin{category}{\mbox{Workshops and Meetings}}
+%\citemnobullet
+%\noindent
+%\begin{enumerate}[topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt]
+%\item CMB-S4 Workshop, August 2017
+%\item SciCoder:  Astroinformatics for Astronomers, July 2014
+%\end{enumerate}
+%\end{category}
+
+% -------- Advising ----------------------------------------------
+\begin{category}{\mbox{Advising and Mentoring}}
+    \citemnobullet
+    \noindent
+    \begin{enumerate}[topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt]
+        \item Metin San (Graduate, Fall 2020--Present)
+        \item Maksym Brilenkov (Graduate, Spring 2021--Summer 2023)
+        \item Johannes Røsok Eskilt (Graduate, Fall 2020--Fall 2023)
+	\item Oliver Wolff (Undergraduate, Fall 2019--Spring 2021)
+        \item Keyi Chen (Undergraduate, Fall 2019--Spring 2020)
+        \item Rui Shi (Graduate, Fall 2019--Spring 2020)
+	\item Yunyang Wang (Graduate, Fall 2018--Spring 2020)
+        \item Mario Aguilar (Graduate, Fall 2018--Fall 2019)
+        \item Bingjie Wang (Graduate, Fall 2016--Spring 2019)
+        \item Keisuke Osumi (Graduate, Fall 2015--Spring 2018)
+        \item Yajing Huang (Graduate, Fall 2014--Spring 2016)
+    \end{enumerate}
+\end{category}
+
+% -------- Publications --------------------------------------------
+
+%\pagebreak
+\begin{category}{\mbox{Main-author Publications:}}
+\citemnobullet\\
+%\bibliographystyle{hapj}
+\bibliographystyle{mybst}
+\nobibliography{myworks}
+\noindent
+\begin{enumerate}[topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt]
+\item \bibentry{watts2023_dr1}
+\item \bibentry{bp17}
+\item \bibentry{2019arXiv191000590W}
+\item \bibentry{2018ApJ...863..121W}
+\item \bibentry{2015ApJ...814..103W}
+\item \bibentry{2018ApJ...863..161W}
+\item \bibentry{2018ApJ...853..119A}
+\item \bibentry{2016PhRvD..94f3526S}
+\item \bibentry{2016ApJ...818..132A}
+\end{enumerate}
+\end{category}
+
+%\begin{category}{\mbox{Additional Refereed Publications:}}
+%\citemnobullet
+%\noindent
+%\begin{enumerate}[topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt]
+%  \setcounter{enumi}{7}
+%  \item \bibentry{2019arXiv191104499X}
+%  \item \bibentry{2019arXiv191101016P}
+%  \item \bibentry{2019arXiv191100391P}
+%  \item \bibentry{2019ApJ...876..126A}
+%  \item \bibentry{2016JLTP..184..759C}
+%  \item \bibentry{2016ApJ...818..151M}
+%\end{enumerate}
+%\end{category}
+
+%\begin{category}{\mbox{Conference Proceedings:}}
+%\citemnobullet
+%\noindent
+%\begin{enumerate}[topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt]
+%  \setcounter{enumi}{13}
+%  \item \bibentry{2018SPIE10708E..28I}
+%  \item \bibentry{2018SPIE10708E..1YD}
+%  \item \bibentry{2018SPIE10708E..2MH}
+%  \item \bibentry{2016SPIE.9914E..1KH}
+%  \item \bibentry{2014SPIE.9153E..1JA}
+%  \item \bibentry{2014SPIE.9153E..1IE}
+%\end{enumerate}
+%\end{category}
+
+\end{document}
